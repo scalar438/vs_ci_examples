@@ -2,7 +2,9 @@ image:
   - Visual Studio 2017
 
 build_script:
+  - msbuild solution.sln /p:Configuration=Debug /p:Platform="x64"
   - msbuild solution.sln /p:Configuration=Release /p:Platform="x64"
 
 test_script:
-  - cmd: call "vector_n/bin/x86_Debug/vector_n.exe"
+  - vstest.console /logger:Appveyor bin/x64_Debug/test.dll
+  - vstest.console /logger:Appveyor bin/x64_Release/test.dll
