@@ -1,0 +1,7 @@
+.vs/
+
+/lib/lib.vcxproj.user
+/lib/tmp
+
+/test/test.vcxproj.user
+/test/tmp
