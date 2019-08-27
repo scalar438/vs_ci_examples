@@ -17,14 +17,12 @@ TEST_CLASS(Test)
 
 	TEST_METHOD(test2)
 	{
-#ifndef _DEBUG
-		Assert::Fail();
-#endif
+		Assert::AreEqual(mul(2, 3), 6);
 	}
 
 	TEST_METHOD(test3)
 	{
-		//Assert::Fail();
+		Assert::AreEqual(mul(sum(2, 2), 2), 8);
 	}
 };
 
