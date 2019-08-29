@@ -15,12 +15,10 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: MSBuild@1
+- task: VSBuild@1
   inputs:
-    solution: '**/*.sln'
-    msbuildVersion: '15.0'
-    platform: 'x64'
-    configuration: 'release'
+    solution: '**\*.sln'
+    vsVersion: '15.0'
 
 
 - task: VSTest@2
