@@ -5,7 +5,7 @@
 
 trigger:
 - tests_must_fail
-- test_must_pass
+- tests_must_pass
 
 pool:
   vmImage: 'vs2017-win2016'
