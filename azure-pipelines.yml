@@ -19,6 +19,8 @@ steps:
   inputs:
     solution: '**\*.sln'
     vsVersion: '15.0'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
 
 
 - task: VSTest@2
