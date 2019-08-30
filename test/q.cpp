@@ -17,14 +17,12 @@ TEST_CLASS(Test)
 
 	TEST_METHOD(test2)
 	{
-#ifndef _DEBUG
+		// This test must fail
 		Assert::Fail();
-#endif
 	}
 
 	TEST_METHOD(test3)
 	{
-		//Assert::Fail();
 	}
 };
 
